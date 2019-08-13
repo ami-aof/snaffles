@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="vendors/css/slick.css">
+  <link rel="stylesheet" href="vendors/css/slick-theme.css">
+
 </head>
 
 <body>
@@ -27,10 +30,94 @@
         <span></span>
         <span></span>
       </div>
-
     </nav>
+
+    <div class="main-cover">
+      <div class="main-cover__all-menu">
+        <p>ALL MENU </p>
+      </div>
+      <div class="main-cover__block"></div>
+    </div>
+
+    <div class="menu-over-view">
+      <div class="menu-items">
+        <div class="menu-items__item"><img src="assets/images/menu/menu_1.jpg" alt=""></div>
+        <div class="menu-items__item"><img src="assets/images/menu/menu_2.jpg" alt=""></div>
+        <div class="menu-items__item"><img src="assets/images/menu/menu_3.jpg" alt=""></div>
+        <div class="menu-items__item"><img src="assets/images/menu/menu_4.jpg" alt=""></div>
+        <div class="menu-items__item"><img src="assets/images/menu/menu_5.jpg" alt=""></div>
+        <div class="menu-items__item"><img src="assets/images/menu/menu_6.jpg" alt=""></div>
+        <div class="menu-items__item"><img src="assets/images/menu/menu_7.jpg" alt=""></div>
+      </div>
+    </div>
+    
   </header>
 
+  <section class="history">
+    <div class="history-title">
+      <h1>history</h1>
+      <p>The softest, yummiest melt-in-your-mouth cheesecake, Japan's number one catchcake from Hakodate since 1998.</p>
+    </div>
+  </section>
+
+  <section class="about container">
+    <div class="about-bg">
+      <span class="about-bg__color"></span>
+      <span class="about-bg__logo"></span>
+      <div class="about-img">
+        <img src="assets/images/27.jpg" class="about-bg__img1" alt="">
+        <img src="assets/images/29.jpg" class="about-bg__img2" alt="">
+      </div>
+    </div>
+    <div class="about-title">
+      <h1>about us</h1>
+      <p>
+        Established in 1998, Snaffle’s is the unique cheese cake in Japan, originally from Hakodate. They are so fluffy and smooth, 
+        melting happily in your mouth! You will definitely love the fluffy & moist texture of these rich cheesy cake. 
+        They are made of the most select ingredients chosen by our professional pâtissiers. 
+        Rich fresh milk ideal for pastry making and we have developed our original cream cheese.
+        The secret of our eggs that harmonise with our confectioneries
+      </p>
+    </div>
+  </section>
+  
+  <section class="contact">
+    <div class="contact-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.529288733854!2d100.53236991477912!3d13.746924190350592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ecde5f13af5%3A0x9557791854bebe1c!2sSnaffle&#39;s+Thailand+-+Paragon!5e0!3m2!1sth!2sth!4v1565691194126!5m2!1sth!2sth" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </section>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="vendors/js/slick.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    $('.menu-items').slick({
+      centerMode: true,
+      centerPadding: '20px',
+      slidesToShow: 1,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '100px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  </script>
 </body>
 </html>
