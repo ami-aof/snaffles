@@ -10,12 +10,13 @@
   <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="vendors/css/slick.css">
   <link rel="stylesheet" href="vendors/css/slick-theme.css">
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 </head>
 
 <body>
   <header class="main-header">
-    <nav class="main-nav">
+    <nav id="navbar" class="main-nav">
       <div class="main-nav__logo">
         <a href="index.html">
           <img src="assets/images/logo/snaffle-logo.png" class="main-nav__logo-brand" alt="">
@@ -29,6 +30,13 @@
         <span></span>
         <span></span>
         <span></span>
+      </div>
+
+      <div class="main-nav__menu">
+        <a href="">MENU</a>
+        <a href="">HISTORY</a>
+        <a href="">ABOUT US</a>
+        <a href="">CONTACT</a>
       </div>
     </nav>
 
@@ -58,9 +66,12 @@
       <h1>history</h1>
       <p>The softest, yummiest melt-in-your-mouth cheesecake, Japan's number one catchcake from Hakodate since 1998.</p>
     </div>
+    <div class="history-img">
+      <img src="assets/images/bg/AYY_06092.png" alt="">
+    </div>
   </section>
 
-  <section class="about container">
+  <section class="about ">
     <div class="about-bg">
       <span class="about-bg__color"></span>
       <span class="about-bg__logo"></span>
@@ -74,9 +85,6 @@
       <p>
         Established in 1998, Snaffle’s is the unique cheese cake in Japan, originally from Hakodate. They are so fluffy and smooth, 
         melting happily in your mouth! You will definitely love the fluffy & moist texture of these rich cheesy cake. 
-        They are made of the most select ingredients chosen by our professional pâtissiers. 
-        Rich fresh milk ideal for pastry making and we have developed our original cream cheese.
-        The secret of our eggs that harmonise with our confectioneries
       </p>
     </div>
   </section>
@@ -85,7 +93,38 @@
     <div class="contact-map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.529288733854!2d100.53236991477912!3d13.746924190350592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ecde5f13af5%3A0x9557791854bebe1c!2sSnaffle&#39;s+Thailand+-+Paragon!5e0!3m2!1sth!2sth!4v1565691194126!5m2!1sth!2sth" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
+    <div class="contact-title">
+      <div class="contact-title__phone">
+        <i class="material-icons">local_phone</i>
+        <div class="contact-title__phone__number">
+          <p>Call center :</p>
+          <p>092 246 4922</p>
+        </div>
+      </div>
+      <div class="contact-title__location">
+        <i class="material-icons">place</i>
+        <div class="contact-title__location__add">
+          <p>Address :</p>
+          <p>Snaffle's Thailand Siam Square One ชั้น 5</p> 
+        </div>
+      </div>
+    </div>
   </section>
+  
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="assets/images/logo/Logo-2.png" alt="">
+      <div class="footer-logo__title">
+        <p>Hakodate pastry snaffle's</p>
+        <p>Copyright 	&copy; 2019</p>
+      </div>
+    </div>
+    <div class="footer-social">
+      <a href="http://"><i class="fab fa-facebook-f"></i></a> 
+      <a href="http://"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+  
   <script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -95,9 +134,18 @@
   <script>
     $('.menu-items').slick({
       centerMode: true,
-      centerPadding: '20px',
-      slidesToShow: 1,
+      centerPadding: '120px',
+      slidesToShow: 5,
       responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '5px',
+            slidesToShow: 5
+          }
+        },
         {
           breakpoint: 768,
           settings: {
@@ -112,7 +160,7 @@
           settings: {
             arrows: false,
             centerMode: true,
-            centerPadding: '100px',
+            centerPadding: '80px',
             slidesToShow: 1
           }
         }

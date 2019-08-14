@@ -14,3 +14,12 @@ function hamburger() {
       element.className = classes.join(" "); 
   }
 }
+
+$(window).scroll(function(){
+  var  scrollTop =  $(this).scrollTop();
+  if (scrollTop > 1){
+       $('#navbar').css('background','white')  
+  }else{
+       $('#navbar').css('background','transparent')
+  }
+})
