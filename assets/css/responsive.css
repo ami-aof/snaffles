@@ -17,6 +17,9 @@
     font-size: 16px;
     padding: 0 5px;
   }
+  .main-cover__all-menu{
+    padding: 14px 29px 14px 80px;
+  }
 
   .history{
     height: 378px;
@@ -111,3 +114,115 @@
     margin-left: 10px;
   }
  }
+
+@media (min-width: 1200px) { 
+  .main-nav{
+    height: 65px;
+    padding: 0 120px;
+  }
+  .main-nav__logo-brand{
+    width: 154px;
+    height: 35px;
+  }
+  .main-nav__menu a{
+    font-size: 16px;
+    padding: 0 20px;
+    font-weight: bold;
+  }
+  .main-cover__all-menu{
+    padding: 14px 29px 14px 120px;
+  }
+  .main-cover__all-menu p{
+    font-size: 24px;
+  }
+  .main-cover__block{
+    height: 52px;
+  }
+
+  .menu-items__item img{
+    width: 180px;
+    height: 180px;
+  }
+  .slick-center .menu-items__item img{
+    width: 225px;
+    height: 225px;
+  }
+
+  .history{
+    height: 630px;
+  }
+  .history-title{
+    padding-left: 120px;
+    padding-top: 400px;
+  }
+  .history-title h1{
+    font-size: 45px;
+  }
+  .history-title p{
+    font-size: 23px;
+  }
+
+  .about-bg__color{
+    border-width:388px 35vw 0 0;
+  }
+  .about-bg__logo{
+    background-size: 506px ;
+    width: 506px;
+    height: 506px;
+    top:-90px;
+    left:-100px;
+  }
+  .about-img{
+    margin:70px 0 0 120px;
+  }
+  .about-img img{
+    width: 239px;
+    height: 375px;
+  }
+  .about-bg__img2{
+    margin-left: 60px;
+  }
+  .about-title{
+    padding:200px 120px 48px 60px;
+  }
+  .about-title h1{
+    font-size: 45px;
+  }
+  .about-title p{
+    font-size:23px;
+    padding:20px 0 0 200px;
+  }
+
+  .contact-map{
+    padding: 0 120px;
+  }
+  .contact-map iframe{
+    width: 100%;
+    height: 285px;
+  }
+  .contact-title{
+    padding: 20px 120px;
+  }
+  .contact-title__phone__number p,
+  .contact-title__location__add p{
+    font-size: 23px;
+  }
+  .contact-title__phone__number p:last-child,
+  .contact-title__location__add p:last-child{
+    font-size: 23px;
+  }
+  .contact-title__location__add p:last-child{
+    margin-left: 45px;
+  }
+
+  .footer{
+    padding: 10px 120px;
+  }
+  .footer-logo img{
+    width: 58px;
+    height: 58px;
+  }
+  .footer-logo__title p{
+    font-size: 14px;
+  }
+}
